@@ -1,0 +1,93 @@
+/* 🌈 General Page Style */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* 🎁 Card Container */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  animation: fadeIn 2s ease-in;
+}
+
+/* 💖 Title */
+h1 {
+  color: #5a3dff;
+  font-size: 1.8rem;
+}
+
+/* 🖼️ Teacher Photo */
+.teacher-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #1a3353;
+  margin: 15px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* 💌 Message Text */
+.message {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* 🪄 Button */
+button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #b887e6;
+}
+
+/* 🌟 Surprise Message */
+.surprise {
+  display: none;
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ✨ Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* 🎊 Confetti Style */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: hsl(calc(360 * var(--hue)), 70%, 60%);
+  top: -10px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
